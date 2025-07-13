@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Paulo Vilela"/>
-    <meta name="viwprot" content="width=width-devuce, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✅ WebJar SEM versão (com webjars-locator) -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
     <title>Academy</title>
 </head>
 <body>
 
-    <p>Olá mundo Spring</p>
-    <h1 th:text="${msg}" ></h1>
+<p>Olá mundo Spring</p>
+<h1 th:text="${msg}"></h1>
+
+<button class="btn btn-primary">Teste</button>
+
+<!-- ✅ Scripts SEM versão -->
+<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 
 </body>
 </html>
