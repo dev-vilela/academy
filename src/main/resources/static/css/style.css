@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+nav{
+    height:90px;
+    color:#FFF;
+}
+
+a{
+    cursor:pointer;
+    font-weight: bold;
+}

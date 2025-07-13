@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Paulo Vilela"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="author" content="Paulo Vilela"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ✅ WebJar SEM versão (com webjars-locator) -->
-    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
-    <title>Academy</title>
+  <!-- ✅ WebJar SEM versão (com webjars-locator) -->
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+
+  <script src="https://kit.fontawesome.com/006642858d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@100;400;700;900&display=swap"
+   rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" >
+
+  <title>Academy</title>
+
 </head>
 <body>
 
-<p>Olá mundo Spring</p>
-<h1 th:text="${msg}"></h1>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #42259C;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/img/logo-academy.png" alt="Logo" height="120" />
+      </a>
 
-<button class="btn btn-primary">Teste</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMobile">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">Cadastrar Aluno</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">Pesquisar Aluno</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-danger" href="#">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
 
 <!-- ✅ Scripts SEM versão -->
 <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
