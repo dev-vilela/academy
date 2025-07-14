@@ -6,15 +6,27 @@
     box-sizing:border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-geral {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 nav{
     height:90px;
     color:#FFFFFF;
+    text-transform: uppercase;
 }
 
 .nav-link{
     color:#FFFFFF;
     font-size:1em;
-    text-transform: uppercase;
 }
 
 a{
@@ -22,14 +34,21 @@ a{
     font-weight: bold;
 }
 
-.neo-section{
-    min-height: 700px;
+.neo-section {
+    flex: 1;
     background-size: cover !important;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    padding:30px;
-    position:relative;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.neo-section {
+    flex: 1;
 }
 
 .wm{
@@ -49,7 +68,7 @@ a{
     max-width:1280px;
     padding: 2% 2%;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .sombra{
@@ -114,7 +133,34 @@ a{
     background-color: #42259C;
     text-align: center;
     font-size: 1.25em;
-    padding:15px;
+    padding:10px;
 }
+
+
+
+/*-------RESPONSIVIDADE---------*/
+
+@media screen and (max-width: 667px){
+
+    .wm{
+        width:100%;
+    }
+
+    nav{
+        height:100%;
+    }
+
+    .text-container{
+        margin-top: 100px;
+    }
+
+    .rodape{
+        font-size: 1em;
+        padding:9px;
+    }
+
+}
+
+
 
 
