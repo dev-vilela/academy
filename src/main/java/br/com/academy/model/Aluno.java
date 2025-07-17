@@ -15,12 +15,14 @@ public class Aluno {
     private String nome;
 
     @Column(name = "curso")
+    @Enumerated(EnumType.STRING)
     private Curso curso;
 
     @Column(name = "matricula")
     private String matricula;
 
     @Column(name = "status")
+    @Enumerated(EnumType.STRING)
     private Status status;
 
     private String turno;
