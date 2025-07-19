@@ -2,8 +2,10 @@ package br.com.academy.controllers;
 
 import br.com.academy.dao.AlunoDao;
 import br.com.academy.model.Aluno;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,10 +28,16 @@ public class AlunoController {
 
     // INSERIR DADOS DO DB
     @PostMapping("InsertAlunos")
-    public ModelAndView inserirAluno(Aluno aluno){
+    public ModelAndView inserirAluno(@Valid Aluno aluno, BindingResult br){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("redirect:/Aluno/alunos-adicionados");
-        alunorepositorio.save(aluno);
+
+        if(br.hasErrors()) {
+            mv.setViewName("Aluno/formAluno");
+            mv.addObject("aluno");
+        }else{
+            mv.setViewName("redirect:/Aluno/alunos-adicionados");
+            alunorepositorio.save(aluno);
+        }
         return mv;
     }
 
