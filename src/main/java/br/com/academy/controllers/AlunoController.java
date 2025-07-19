@@ -35,7 +35,7 @@ public class AlunoController {
             mv.setViewName("Aluno/formAluno");
             mv.addObject("aluno");
         }else{
-            mv.setViewName("redirect:/Aluno/alunos-adicionados");
+            mv.setViewName("redirect:/alunos-adicionados");
             alunorepositorio.save(aluno);
         }
         return mv;
