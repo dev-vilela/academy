@@ -80,11 +80,13 @@
         <!-- Card 3: Alunos Cancelados -->
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="card h-100">
-                <img class="card-img-top" src="img/img.png"  alt="Alunos Cancelados" />
+               <a th:href="@{/alunos-cancelados}">
+                   <img class="card-img-top" src="img/img.png"  alt="Alunos Cancelados" />
+               </a>
                 <div class="card-body">
                     <h5 class="card-title">Alunos Cancelados</h5>
                     <p class="card-text">Busque por todos os alunos que estão cancelados no sistema</p>
-                    <a href="#" class="btn btn-outline-primary">Clique Aqui!</a>
+                    <a th:href="@{/alunos-cancelados}" class="btn btn-outline-primary">Clique Aqui!</a>
                 </div>
             </div>
         </div>
@@ -92,11 +94,13 @@
         <!-- Card 4: Alunos Trancados -->
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="card h-100">
-                <img class="card-img-top" src="img/alunos-trancados.png" alt="Alunos Trancados" />
+                <a th:href="@{/alunos-trancados}">
+                    <img class="card-img-top" src="img/alunos-trancados.png" alt="Alunos Trancados" />
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Alunos Trancados</h5>
                     <p class="card-text">Busque por todos os alunos que estão trancados no sistema</p>
-                    <a href="#" class="btn btn-outline-primary">Clique Aqui!</a>
+                    <a th:href="@{/alunos-trancados}" class="btn btn-outline-primary">Clique Aqui!</a>
                 </div>
             </div>
         </div>

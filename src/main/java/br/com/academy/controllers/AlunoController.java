@@ -91,7 +91,23 @@ public class AlunoController {
     public ModelAndView listaAlunosInativos(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("Aluno/alunos-inativos");
-        mv.addObject("alunosAtivos", alunorepositorio.findByStatusInativo());
+        mv.addObject("alunosInativos", alunorepositorio.findByStatusInativos());
+        return mv;
+    }
+
+    @GetMapping("alunos-cancelados")
+    public ModelAndView listaAlunosCancelados(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("Aluno/alunos-cancelados");
+        mv.addObject("alunosCancelados", alunorepositorio.findByStatusCancelados());
+        return mv;
+    }
+
+    @GetMapping("alunos-trancados")
+    public ModelAndView listaAlunosTrancados(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("Aluno/alunos-trancados");
+        mv.addObject("alunosTrancados", alunorepositorio.findByStatusTrancados());
         return mv;
     }
 
