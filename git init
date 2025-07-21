@@ -1,0 +1,89 @@
+[33mcommit 06661e83211eda14d0449a6b4a97eff3367b7cfc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Sun Jul 20 22:19:53 2025 -0300
+
+    Atualização
+
+[33mcommit 4089661f83175a21e1f6694c595d4e75dd7d5389[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Sat Jul 19 23:55:27 2025 -0300
+
+     Implementando um Filtro de Alunos
+
+[33mcommit 53aad72cf704a01cfc766e695903657317ac0cad[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Sat Jul 19 18:04:34 2025 -0300
+
+    Atualizando o caminho de alunos adcionados
+
+[33mcommit 249da4ae90f90ae1737f10d2369ff8bca4d557b0[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Sat Jul 19 17:56:18 2025 -0300
+
+    Validando Dados no Formulário de Cadastro
+
+[33mcommit 870399966b7cd77a8bd4085d51a21fcbf65bfc5b[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Thu Jul 17 22:58:37 2025 -0300
+
+    Criando método Editar e Excluir Aluno
+
+[33mcommit ce237ffb455290c7eb2a70a91a2bf1fa95911176[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Thu Jul 17 22:25:36 2025 -0300
+
+    Listando os Alunos Do Banco de Dados
+
+[33mcommit e4be82e47880a66088c05bda3e75257762eff3d1[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Wed Jul 16 23:18:43 2025 -0300
+
+     Inserindo Dados no Banco com JPA e Hibernate
+
+[33mcommit 6a3b61e34d3f27f45357dca3e1679177b1e2fbf8[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Wed Jul 16 20:39:22 2025 -0300
+
+    Conexão com o Banco de Dados e Criação da Classe Aluno
+
+[33mcommit af121135e554cd1521bbf7c307c93f04c4fdc83c[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Wed Jul 16 19:51:03 2025 -0300
+
+    Configurando index para uso de Thymeleaf
+
+[33mcommit da38fc149716281bf07c7cf153939c45569f4abe[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Mon Jul 14 20:40:13 2025 -0300
+
+    Responsividade e Ajustes Finais
+
+[33mcommit a18afdfe913685ecedc1ba0897db4601a84b1227[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Mon Jul 14 19:34:43 2025 -0300
+
+    Finalizando a Página Principal
+
+[33mcommit 91245ee30424be0771c77d13a4c05b30bc1adc6e[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Sun Jul 13 19:22:54 2025 -0300
+
+    Criando Menu de Navegação com Bootstrap
+
+[33mcommit e9ea43d42d78db6e34aa83721f84422e93128548[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Sun Jul 13 17:32:44 2025 -0300
+
+    Adicionando a biblioteca WebJars e configurando (JQUERY, BOOTSTRAP)
+
+[33mcommit 1d3afa5f63eaaf1b787375d2444da6ff62b401c0[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Sat Jul 12 16:46:42 2025 -0300
+
+    Criando rotas do HomeController para adicionar no index.html
+
+[33mcommit ec7d1e10d3bae854c8a05bf36dc2fe102b54e252[m
+Author: Paulo Vilela <paulov4@hotmail.com>
+Date:   Sat Jul 12 16:07:21 2025 -0300
+
+    First Commit

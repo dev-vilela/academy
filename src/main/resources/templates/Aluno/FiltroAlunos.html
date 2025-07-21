@@ -30,13 +30,13 @@
     <br>
 
     <!-- ✅ Campo de pesquisa -->
-    <form method="post">
+    <form method="post" action="pesquisar-aluno" th:object="${aluno}">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Busque por o nome do aluno.">
+                    <input type="text"  placeholder="Busque por o nome do aluno." th:field="*{nome}" class="form-control" >
                     <div class="input-group-append">
-                        <button type="submit" class="btn btn-outline-secondary">Pesquisar</button>
+                        <button type="submit"  class="btn btn-outline-secondary">Pesquisar</button>
                     </div>
                 </div>
             </div>

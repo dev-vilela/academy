@@ -42,7 +42,7 @@
                         <a class="nav-link" th:href="@{inserirAlunos}"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" th:href="@{filtroAlunos}"><i class="fas fa-search"></i> Pesquisar Aluno</a>
+                        <a data-bs-toggle="modal" data-bs-target="#modalPesquisa" class="nav-link" th:href="@{filtroAlunos}"><i class="fas fa-search"></i> Pesquisar Aluno</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-danger" href="#"><i class="fas fa-times"></i> Sair</a>
@@ -63,7 +63,7 @@
 
 </footer>
 
-<<!-- ✅ Scripts SEM versão -->
+<!-- ✅ Scripts SEM versão -->
 <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
 <script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 

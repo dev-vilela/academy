@@ -9,7 +9,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 @Controller
 public class AlunoController {
@@ -76,6 +79,7 @@ public class AlunoController {
     public ModelAndView filtroAlunos(){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("Aluno/filtroAlunos");
+        mv.addObject("aluno", new Aluno());
         return mv;
     }
 
@@ -110,6 +114,23 @@ public class AlunoController {
         mv.addObject("alunosTrancados", alunorepositorio.findByStatusTrancados());
         return mv;
     }
+
+
+    @PostMapping("pesquisar-aluno")
+    public ModelAndView pesquisarAluno(@RequestParam(required = false) String nome){
+        ModelAndView mv = new ModelAndView();
+        List<Aluno> listaAlunos;
+        if (nome == null || nome.trim().isEmpty()){
+            listaAlunos = alunorepositorio.findAll();
+        }else{
+            listaAlunos = alunorepositorio.findByNomeContainingIgnoreCase(nome);
+        }
+        mv.addObject("ListaDeAlunos", listaAlunos);
+        mv.setViewName("Aluno/pesquisa-resultado");
+        return mv;
+    }
+
+
 
 
 
