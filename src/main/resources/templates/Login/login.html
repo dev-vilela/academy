@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Paulo Vilela"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✅ WebJar SEM versão (com webjars-locator) -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+
+    <script src="https://kit.fontawesome.com/006642858d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@100;400;700;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css" >
+
+    <title>Academy | LOGIN</title>
+
+</head>
+<body>
+
+        <!--FORMULARIO DE LOGIN-->
+    <div class="Login-Form">
+        <div class="container">
+            <div class="main-div">
+                <div class="texto-header">
+                    <h2>Admin Login</h2>
+                    <p>Insira suas credenciais para efetuar login no sistema.</p>
+                </div>
+
+                <form method="post">
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Insira sua senha">
+                    </div>
+
+                    <div class="cadastro">
+                        <a th:href="@{cadastro} ">Não possui cadastro? Clique aqui.</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-info">Voltar</button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
