@@ -2,6 +2,7 @@ package br.com.academy.service;
 
 import br.com.academy.Exceptions.CriptoExistException;
 import br.com.academy.Exceptions.EmailExistsException;
+import br.com.academy.Exceptions.ServiceExc;
 import br.com.academy.dao.UsuarioDao;
 import br.com.academy.model.Usuario;
 import br.com.academy.util.Util;
@@ -36,6 +37,23 @@ public class ServiceUsuario {
 
         // Salva o usuário no banco de dados
         repositorioUsuario.save(user);
+    }
+
+    public Usuario loginUser(String email, String senha) throws ServiceExc {
+
+//        System.out.println("==> LOGIN TENTATIVA:");
+//        System.out.println("Usuário: " + user);
+//        System.out.println("Senha MD5: " + senha);
+
+        Usuario userLogin = repositorioUsuario.buscarLogin(email, senha);
+
+        if (userLogin == null) {
+            System.out.println("⚠️ Nenhum usuário encontrado com essas credenciais!");
+        } else {
+            System.out.println("✅ Usuário encontrado: " + userLogin.getEmail());
+        }
+
+        return userLogin;
     }
 
 

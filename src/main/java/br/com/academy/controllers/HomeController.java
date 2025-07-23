@@ -9,12 +9,6 @@ import br.com.academy.model.Aluno;
 @Controller
 public class HomeController {
 
-    @GetMapping("/index")
-    public ModelAndView index(){
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("home/index");
-        mv.addObject("aluno", new Aluno());  // <<< Adicione isto
-        return mv;
-    }
+
 
 }
