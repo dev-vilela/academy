@@ -21,6 +21,10 @@
 </head>
 <body>
 
+<div style="margin:0; text-align: center; background-color: green; color:#FFF;" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Seja Bem Vindo(a): <span th:text="${session.usuarioLogado.user}"></span> </strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 
 <div class="container-geral">
 
@@ -36,11 +40,11 @@
     <div class="botoes" >
 
     <div class="wm" >
-        <h5  class="btn btnw btn1 " >CADASTRAR ALUNO</h5>
+        <a th:href="@{inserirAlunos}"  class="btn btnw btn1 " >CADASTRAR ALUNO</a>
     </div>
 
     <div class="wm" >
-        <h5 class="btn btnw btn2 justify-content-center">ENCONTRAR ALUNO</h5>
+        <a th:href="@{filtro-alunos}" class="btn btnw btn2 justify-content-center">ENCONTRAR ALUNO</a>
     </div>
 
         <div class="clear" ></div>

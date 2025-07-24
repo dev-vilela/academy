@@ -36,16 +36,18 @@
             <div class="collapse navbar-collapse justify-content-end" id="navMobile">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                        <a class="nav-link" th:href="@{/index}"><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" th:href="@{inserirAlunos}"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a data-bs-toggle="modal" data-bs-target="#modalPesquisa" class="nav-link" th:href="@{filtroAlunos}"><i class="fas fa-search"></i> Pesquisar Aluno</a>
+                        <a data-bs-toggle="modal" data-bs-target="#modalPesquisa" class="nav-link" th:href="@{/filtroAlunos}"><i class="fas fa-search"></i> Pesquisar Aluno</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-danger" href="#"><i class="fas fa-times"></i> Sair</a>
+                        <form action="/logout" method="post">
+                        <button type="submit" class="btn btn-danger" ><i class="fas fa-times"></i> Sair</button>
+                        </form>
                     </li>
                 </ul>
             </div>
