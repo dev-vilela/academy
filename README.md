@@ -25,23 +25,23 @@ Para acessar o sistema, é necessário fazer login com e-mail e senha cadastrado
 
 ## ✅ TELA DE LOGIN
 
-    <img src="img/LOGIN.png" alt="">
+<img src="img/LOGIN.png" alt="">
 
 ---   
 
 ## ✅ TELA DE CADASTRO
 
-    <img src="img/CADASTRO.png" alt="">
+<img src="img/CADASTRO.png" alt="">
 
 ---  
 ## ✅ TELA INICIAL
 
-    <img src="img/TELA.png" alt="">
+<img src="img/TELA.png" alt="">
 
 ---  
 ## ✅ TELA ENCOTRAR
 
-    <img src="img/ECONTRAR.png" alt="">
+<img src="img/ECONTRAR.png" alt="">
 
 ---  
     
