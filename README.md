@@ -1,7 +1,9 @@
 
 # 🎓 ACADEMY TECH
 
-Sistema web completo para gerenciamento de alunos em academias, desenvolvido com **Java**, **Spring Boot**, **Thymeleaf** e **MySQL**. O sistema possui autenticação de login, cadastro de alunos, listagem, busca por nome e edição de dados.
+Sistema web completo para gerenciamento de alunos, desenvolvido com **Java**, **Spring Boot**, **Thymeleaf**, **Bootstrap** e 
+**MySQL**. O sistema possui autenticação de login, cadastro de alunos, listagem, busca por nome e edição de dados — 
+tudo com um layout responsivo e organizado.
 
 ---
 
