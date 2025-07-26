@@ -49,14 +49,14 @@ Para acessar o sistema, é necessário fazer login com e-mail e senha cadastrado
 
 ## 🛠️ Tecnologias utilizadas
 
-| Camada         | Tecnologias                  |
-|----------------|------------------------------|
-| Backend        | Java 17, Spring Boot         |
-| Frontend (View)| Thymeleaf, HTML, CSS         |
-| Banco de Dados | MySQL                        |
-| Build          | Maven                        |
-| IDE            | IntelliJ IDEA                |
-| Designer       | Canva                        |
+| Camada         | Tecnologias               |
+|----------------|---------------------------|
+| Backend        | Java 17, Spring Boot      |
+| Frontend (View)| Thymeleaf, BootStrap, CSS |
+| Banco de Dados | MySQL                     |
+| Build          | Maven                     |
+| IDE            | IntelliJ IDEA             |
+| Designer       | Canva                     |
 
 ---
 
